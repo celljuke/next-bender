@@ -13,7 +13,7 @@ cd my-app
 npm run dev
 ```
 
-> **Note**: Replace `celljuke/next-bender` with your actual GitHub repository path.
+> **Note**: The full GitHub URL is required for custom templates. The short format `-e celljuke/next-bender` only works for official Next.js examples.
 
 ### Using GitHub Template
 

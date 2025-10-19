@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-fullstack-template",
+  "name": "next-bender",
   "version": "1.0.0",
   "description": "A production-ready Next.js template with authentication, database, and API layer. Use with: npx create-next-app -e celljuke/next-bender",
-  "author": "Your Name",
+  "author": "Selçuk Kiraz",
   "license": "MIT",
   "keywords": [
     "nextjs",

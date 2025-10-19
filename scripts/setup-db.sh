@@ -1,6 +1,31 @@
 #!/bin/bash
 
-echo "🚀 Setting up cms_web_db database..."
+set -e
+
+# Load environment variables from .env.local
+if [ -f .env.local ]; then
+    export $(grep -v '^#' .env.local | grep -v '^$' | xargs)
+else
+    echo "❌ .env.local not found. Please run ./scripts/init-project.sh first."
+    exit 1
+fi
+
+# Extract database credentials from DATABASE_URL
+# Format: postgresql://user:password@host:port/database
+if [ -z "$DATABASE_URL" ]; then
+    echo "❌ DATABASE_URL not found in .env.local"
+    exit 1
+fi
+
+# Parse DATABASE_URL using regex
+DB_USER=$(echo "$DATABASE_URL" | sed -n 's|.*://\([^:]*\):.*|\1|p')
+DB_PASSWORD=$(echo "$DATABASE_URL" | sed -n 's|.*://[^:]*:\([^@]*\)@.*|\1|p')
+DB_HOST=$(echo "$DATABASE_URL" | sed -n 's|.*@\([^:]*\):.*|\1|p')
+DB_PORT=$(echo "$DATABASE_URL" | sed -n 's|.*:\([0-9]*\)/.*|\1|p')
+DB_NAME=$(echo "$DATABASE_URL" | sed -n 's|.*/\([^?]*\).*|\1|p')
+
+echo "🚀 Setting up database: $DB_NAME..."
+echo ""
 
 # Check if Docker is running
 if ! docker info > /dev/null 2>&1; then
@@ -18,7 +43,7 @@ sleep 5
 
 # Check if container is running and healthy
 for i in {1..12}; do
-    if docker-compose exec -T postgres psql -U cms_web_db_user -d cms_web_db -c '\q' >/dev/null 2>&1; then
+    if docker-compose exec -T postgres psql -U "$DB_USER" -d "$DB_NAME" -c '\q' >/dev/null 2>&1; then
         echo "✅ Database is ready!"
         break
     fi
@@ -39,15 +64,13 @@ npm run db:generate
 echo "📊 Pushing database schema..."
 npm run db:push
 
+echo ""
 echo "🎉 Database setup complete!"
 echo ""
 echo "📋 Database connection details:"
-echo "   Host: localhost"
-echo "   Port: 5434"
-echo "   Database: cms_web_db"
-echo "   Username: cms_web_db_user"
-echo "   Password: cms_web_db_password"
-echo ""
-echo "🔗 Connection URL: postgresql://cms_web_db_user:cms_web_db_password@localhost:5434/cms_web_db"
+echo "   Host: $DB_HOST"
+echo "   Port: $DB_PORT"
+echo "   Database: $DB_NAME"
+echo "   Username: $DB_USER"
 echo ""
 echo "▶️  You can now run: npm run dev" 
