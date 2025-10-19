@@ -7,13 +7,13 @@ A modern, production-ready Next.js template with authentication, database, and A
 ### Using create-next-app (Fastest Way)
 
 ```bash
-npx create-next-app@latest my-app -e https://github.com/yourusername/your-template-repo
+npx create-next-app@latest my-app -e https://github.com/celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 npm run dev
 ```
 
-> **Note**: Replace `yourusername/your-template-repo` with your actual GitHub repository path.
+> **Note**: Replace `celljuke/next-bender` with your actual GitHub repository path.
 
 ### Using GitHub Template
 
@@ -26,7 +26,7 @@ npm run dev
 ### Manual Clone
 
 ```bash
-git clone https://github.com/yourusername/your-template-repo my-project
+git clone https://github.com/celljuke/next-bender my-project
 cd my-project
 ./scripts/init-project.sh
 npm run dev

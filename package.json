@@ -1,7 +1,7 @@
 {
   "name": "nextjs-fullstack-template",
   "version": "1.0.0",
-  "description": "A production-ready Next.js template with authentication, database, and API layer. Use with: npx create-next-app -e yourusername/your-template-repo",
+  "description": "A production-ready Next.js template with authentication, database, and API layer. Use with: npx create-next-app -e celljuke/next-bender",
   "author": "Your Name",
   "license": "MIT",
   "keywords": [
@@ -22,12 +22,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/nextjs-fullstack-template"
+    "url": "https://github.com/celljuke/next-bender"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/nextjs-fullstack-template/issues"
+    "url": "https://github.com/celljuke/next-bender/issues"
   },
-  "homepage": "https://github.com/yourusername/nextjs-fullstack-template#readme",
+  "homepage": "https://github.com/celljuke/next-bender#readme",
   "private": false,
   "scripts": {
     "dev": "next dev --turbopack",

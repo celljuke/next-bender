@@ -23,7 +23,7 @@ git add .
 git commit -m "Initial template setup"
 
 # Create a new repository on GitHub, then:
-git remote add origin https://github.com/yourusername/nextjs-fullstack-template.git
+git remote add origin https://github.com/celljuke/next-bender.git
 git branch -M main
 git push -u origin main
 ```
@@ -72,7 +72,7 @@ While in Settings, you can also:
 5. Click **"Create repository"**
 6. Clone your new repository:
    ```bash
-   git clone https://github.com/yourusername/my-new-project.git
+   git clone https://github.com/celljuke/my-new-project.git
    cd my-new-project
    ```
 
@@ -80,10 +80,10 @@ While in Settings, you can also:
 
 ```bash
 # Create a new repository from template
-gh repo create my-new-project --template yourusername/nextjs-fullstack-template --public
+gh repo create my-new-project --template celljuke/next-bender --public
 
 # Clone it
-gh repo clone yourusername/my-new-project
+gh repo clone celljuke/my-new-project
 cd my-new-project
 ```
 
@@ -91,7 +91,7 @@ cd my-new-project
 
 ```bash
 # Clone the template
-git clone https://github.com/yourusername/nextjs-fullstack-template.git my-new-project
+git clone https://github.com/celljuke/next-bender.git my-new-project
 cd my-new-project
 
 # Remove git history
@@ -103,7 +103,7 @@ git add .
 git commit -m "Initial commit from template"
 
 # Push to your new repository
-git remote add origin https://github.com/yourusername/my-new-project.git
+git remote add origin https://github.com/celljuke/my-new-project.git
 git push -u origin main
 ```
 
@@ -319,7 +319,7 @@ Users can manually pull updates:
 
 ```bash
 # Add template as remote
-git remote add template https://github.com/yourusername/nextjs-fullstack-template.git
+git remote add template https://github.com/celljuke/next-bender.git
 
 # Fetch template changes
 git fetch template

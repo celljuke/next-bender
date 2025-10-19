@@ -9,7 +9,7 @@ Quick reference for using your template in different scenarios.
 **Basic usage:**
 
 ```bash
-npx create-next-app@latest my-app -e https://github.com/yourusername/your-template-repo
+npx create-next-app@latest my-app -e https://github.com/celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 npm run dev
@@ -18,30 +18,30 @@ npm run dev
 **With specific branch:**
 
 ```bash
-npx create-next-app@latest my-app -e https://github.com/yourusername/your-template-repo/tree/develop
+npx create-next-app@latest my-app -e https://github.com/celljuke/next-bender/tree/develop
 ```
 
 **With specific tag/version:**
 
 ```bash
-npx create-next-app@latest my-app -e https://github.com/yourusername/your-template-repo/tree/v1.0.0
+npx create-next-app@latest my-app -e https://github.com/celljuke/next-bender/tree/v1.0.0
 ```
 
 **Short form (if public):**
 
 ```bash
-npx create-next-app@latest my-app -e yourusername/your-template-repo
+npx create-next-app@latest my-app -e celljuke/next-bender
 ```
 
 ### Option 2: GitHub Template Button
 
-1. Visit: `https://github.com/yourusername/your-template-repo`
+1. Visit: `https://github.com/celljuke/next-bender`
 2. Click **"Use this template"**
 3. Fill in repository details
 4. Clone your new repository
 5. Run setup:
    ```bash
-   git clone https://github.com/yourusername/my-new-repo
+   git clone https://github.com/celljuke/my-new-repo
    cd my-new-repo
    ./scripts/init-project.sh
    npm run dev
@@ -51,7 +51,7 @@ npx create-next-app@latest my-app -e yourusername/your-template-repo
 
 ```bash
 # Clone the template
-git clone https://github.com/yourusername/your-template-repo my-project
+git clone https://github.com/celljuke/next-bender my-project
 
 # Navigate to project
 cd my-project
@@ -73,7 +73,7 @@ npm run dev
 
 ```bash
 # Create project
-npx create-next-app@latest my-store -e yourusername/template
+npx create-next-app@latest my-store -e celljuke/next-bender
 
 # Navigate and setup
 cd my-store
@@ -96,7 +96,7 @@ npm run dev
 
 ```bash
 # Create with specific version
-npx create-next-app@latest saas-dashboard -e yourusername/template/tree/v1.0.0
+npx create-next-app@latest saas-dashboard -e celljuke/next-bender/tree/v1.0.0
 
 cd saas-dashboard
 ./scripts/init-project.sh
@@ -112,7 +112,7 @@ npm run dev
 
 ```bash
 # Create project
-npx create-next-app@latest my-blog -e yourusername/template
+npx create-next-app@latest my-blog -e celljuke/next-bender
 
 cd my-blog
 ./scripts/init-project.sh
@@ -128,7 +128,7 @@ npm run dev
 
 ```bash
 # Create from develop branch
-npx create-next-app@latest internal-tool -e yourusername/template/tree/develop
+npx create-next-app@latest internal-tool -e celljuke/next-bender/tree/develop
 
 cd internal-tool
 ./scripts/init-project.sh
@@ -146,7 +146,7 @@ npm run dev
 
 ```bash
 # 1. Create project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 
 # 2. Setup
 cd my-app
@@ -173,7 +173,7 @@ git push origin main
 
 ```bash
 # 1. Create with specific version
-npx create-next-app@latest my-app -e yourusername/template/tree/v1.2.0
+npx create-next-app@latest my-app -e celljuke/next-bender/tree/v1.2.0
 
 # 2. Setup with custom configuration
 cd my-app
@@ -206,7 +206,7 @@ npm run dev
 
 ```bash
 # Create project from template
-npx create-next-app@latest team-project -e yourusername/template
+npx create-next-app@latest team-project -e celljuke/next-bender
 
 cd team-project
 
@@ -253,7 +253,7 @@ git checkout -b feature/my-feature
 
 ```bash
 # Create project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -293,7 +293,7 @@ npm run start
 
 ```bash
 # Create project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -313,7 +313,7 @@ npm run dev
 
 ```bash
 # Create project
-npx create-next-app@latest my-saas -e yourusername/template
+npx create-next-app@latest my-saas -e celljuke/next-bender
 cd my-saas
 ./scripts/init-project.sh
 
@@ -332,7 +332,7 @@ npm run dev
 
 ```bash
 # Create project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -352,7 +352,7 @@ npm run dev
 
 ```bash
 # Create and setup project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -361,7 +361,7 @@ git add .
 git commit -m "Initial commit"
 
 # Push to GitHub
-git remote add origin https://github.com/yourusername/my-app
+git remote add origin https://github.com/celljuke/my-app
 git push -u origin main
 
 # Deploy to Vercel
@@ -374,7 +374,7 @@ npx vercel
 
 ```bash
 # Create project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -391,7 +391,7 @@ docker run -p 3000:3000 --env-file .env.production my-app
 
 ```bash
 # Create project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -409,7 +409,7 @@ npm test
 
 ```bash
 # Setup project
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 cd my-app
 ./scripts/init-project.sh
 
@@ -432,7 +432,7 @@ npx playwright test
 cd my-existing-project
 
 # Add template as remote
-git remote add template https://github.com/yourusername/template
+git remote add template https://github.com/celljuke/next-bender
 
 # Fetch template updates
 git fetch template
@@ -450,24 +450,24 @@ git merge template/main --allow-unrelated-histories
 
 ```bash
 # Always use tagged versions for production
-npx create-next-app@latest prod-app -e yourusername/template/tree/v1.0.0
+npx create-next-app@latest prod-app -e celljuke/next-bender/tree/v1.0.0
 ```
 
 ### Tip 2: Create Project Variants
 
 ```bash
 # Minimal variant
-npx create-next-app@latest minimal-app -e yourusername/template/tree/minimal
+npx create-next-app@latest minimal-app -e celljuke/next-bender/tree/minimal
 
 # Full-featured variant
-npx create-next-app@latest full-app -e yourusername/template/tree/full
+npx create-next-app@latest full-app -e celljuke/next-bender/tree/full
 ```
 
 ### Tip 3: Automate Setup
 
 ```bash
 # One-liner for complete setup
-npx create-next-app@latest my-app -e yourusername/template && cd my-app && ./scripts/init-project.sh && npm run dev
+npx create-next-app@latest my-app -e celljuke/next-bender && cd my-app && ./scripts/init-project.sh && npm run dev
 ```
 
 ### Tip 4: Document Your Customizations
@@ -484,7 +484,7 @@ echo "- Modified Y for our use case" >> SETUP.md
 ### Example 1: Learning tRPC
 
 ```bash
-npx create-next-app@latest learn-trpc -e yourusername/template
+npx create-next-app@latest learn-trpc -e celljuke/next-bender
 cd learn-trpc
 ./scripts/init-project.sh
 
@@ -496,7 +496,7 @@ cd learn-trpc
 ### Example 2: Learning Prisma
 
 ```bash
-npx create-next-app@latest learn-prisma -e yourusername/template
+npx create-next-app@latest learn-prisma -e celljuke/next-bender
 cd learn-prisma
 ./scripts/init-project.sh
 
@@ -509,7 +509,7 @@ npm run db:studio
 ### Example 3: Learning Next.js App Router
 
 ```bash
-npx create-next-app@latest learn-nextjs -e yourusername/template
+npx create-next-app@latest learn-nextjs -e celljuke/next-bender
 cd learn-nextjs
 ./scripts/init-project.sh
 
@@ -524,15 +524,15 @@ Share how you've used the template:
 
 ```bash
 # Quick prototype
-npx create-next-app@latest prototype -e yourusername/template
+npx create-next-app@latest prototype -e celljuke/next-bender
 # Built MVP in 2 days instead of 2 weeks!
 
 # Client project
-npx create-next-app@latest client-project -e yourusername/template
+npx create-next-app@latest client-project -e celljuke/next-bender
 # Delivered ahead of schedule
 
 # Hackathon project
-npx create-next-app@latest hackathon -e yourusername/template
+npx create-next-app@latest hackathon -e celljuke/next-bender
 # Won first place with fully-functional app!
 ```
 
@@ -545,13 +545,13 @@ npx create-next-app@latest hackathon -e yourusername/template
 npx create-next-app@latest APP_NAME -e GITHUB_URL
 
 # Your template
-npx create-next-app@latest my-app -e yourusername/template
+npx create-next-app@latest my-app -e celljuke/next-bender
 
 # With version
-npx create-next-app@latest my-app -e yourusername/template/tree/v1.0.0
+npx create-next-app@latest my-app -e celljuke/next-bender/tree/v1.0.0
 
 # Complete setup
-npx create-next-app@latest my-app -e yourusername/template && cd my-app && ./scripts/init-project.sh && npm run dev
+npx create-next-app@latest my-app -e celljuke/next-bender && cd my-app && ./scripts/init-project.sh && npm run dev
 ```
 
 ---
